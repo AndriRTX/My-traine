@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Andri</title>
+    <style>
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            word-spacing: 10px;
+            font-family: Arial, sans-serif;
+        }
+        .card-1 {
+            flex: 1;
+        }
+        .card-2 {
+            flex: 2;
+        }
+        .card-3 {
+            flex: 4;
+        }
+        img {
+            float: left;
+        }
+        .resume {
+            float: left;
+        }
+
+        @media(min-width:321px) {
+            .selector { 
+                width:300px; 
+            }
+        } 
+
+        @media(max-width:400px) {
+            .selector { 
+                width:380px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <section id="Header">
+            <div class="navbar">
+                <ul>
+                    <li><a class="link" href="">HOME</a></li>
+                    <li><a class="link" href="">PRODUCT</a></li>
+                    <li><a class="link" href="">GALLERY</a></li>
+                    <li><a class="link" href="">BLOG</a></li>
+                    <li><a class="link" href="">INVENTORY</a></li>
+                </ul>
+            </div>
+            
+            <br><br><hr><br>
+        
+        </section>
+        <section id="Content">
+            <div class="profile">
+                <div class="card-1">
+                    <div class="picture">
+                        <img src="Logo.png" alt="Andri Photo" title="Andri Profile" width="100">
+                    </div>
+                </div>
+                <div class="card-2">
+                    <table class="resume">
+                        <tr>
+                            <td colspan="2"><h2>Andri Kurniadi</h2></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Front End Development</td>
+                        </tr>
+                        <tr>
+                            <td><button>Contact</button></td>
+                            <td><button>Resume</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-3">
+                    <table class="data">
+                        <tr>
+                            <td><p>Availability</p></td>
+                            <td><p>Full time</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Age</p></td>
+                            <td><p>21</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Location</p></td>
+                            <td><p>Jakarta</p></td>
+                        </tr>
+                        <tr>
+                            <td>Years Experience</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>Andrihtml@gmail.com</td>
+                        </tr>
+                        </table>
+                </div>
+                
+            </div>
+            <div class="form">
+
+                <form action="form">
+                    <table>
+                        <tr>
+                            <td><label for="Name">Name</label></td>
+                            <td><input type="text" name="Name" id="Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Role">Role</label></td>
+                            <td><input type="text" name="Role" id="Role"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Availability">Availability</label></td>
+                            <td><input type="text" name="Availability" id="Availability"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Age">Age</label></td>
+                            <td><input type="text" name="Age" id="Age"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Location">Location</label></td>
+                            <td><input type="text" name="Location" id="Location"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Years Experience">Years Experience</label></td>
+                            <td><input type="text" name="Years Experience" id="Years Experience"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Email">Email</label></td>
+                            <td><input type="text" name="Email" id="Email"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit">Submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

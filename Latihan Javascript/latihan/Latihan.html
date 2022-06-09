@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>latihan while dan for loop</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="">Pesan </label></td>
+                <td>:<input id="pesan" type="text"></td>
+            </tr>
+            <br>
+            <tr>
+                <td><label for="">Berapa banyak</label></td>
+                <td>:<input id="banyak" type="number"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <button id="hasil" onclick="print()">Cetak</button>
+    <ol id="list"></ol>
+    <script>
+        function print() {
+            const pesan = document.getElementById("pesan").value;
+            let banyak = document.getElementById("banyak").value;
+            let hitung = 0;
+            while(hitung <= banyak) {
+                pesan.innerHTML = pesan.innerHTML + <li>${pesan}</li>;
+                hitung++;
+            }
+        }
+    </script>
+</body>
+</html>

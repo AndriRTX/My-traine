@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Student</title>
+</head>
+<body>
+    <label for="">Score :</label><input id="score" type="number"><br><br>
+    <button onclick="CekScore()">Cek Grade</button>
+    <p id="result"></p>
+    <script>
+        function CekScore() {
+            let score = document.getElementById("score").value;
+            let result = ""
+            if (score >= 90) {
+                result = "A"
+            } else if (score >=80) {
+                result = "B"
+            } else if (score >=70) {
+                result = "C"
+            } else if (score >=60) {
+                result = "D"
+            } else if (score <=50) {
+                result = "E"
+            }
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

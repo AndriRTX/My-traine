@@ -1,0 +1,27 @@
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+.menu {
+    float: right;
+}
+
+
+
+
+
+/* Micro clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
